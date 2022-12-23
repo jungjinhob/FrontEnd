@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* .profile-img-box{
+            margin: 400px auto;
+            position: relative;
+            border: 5px solid #dbdbdb99;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        } */
+        /* .profile-img{
+            position: relative;
+            top: 50%;
+            left : 50%;
+            width: 180%;
+            
+            transform: translate(-50%,-50%);
+        } */
+        .profile-img-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 400px auto;
+            position: relative;
+
+            border: 5px solid #dbdbdb99;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .profile-img{
+            
+            width: 150%;
+            height: 100%;
+            
+        }
+        .box{
+            border: 5px solid #dbdbdb99;
+            padding: 50px 50px;
+            width: 900px;
+            height: 900px;
+            background-image: url(/images/dog.jpg);
+            background-repeat: no-repeat;
+            background-position: center; /* 영역 중앙에 배치 center안주고 cover하면 사진이 클경우 짤림 */
+            background-size: cover; /* 영역 크기에  백그라운드 크기를 맞춰줌 (auto는 사진 본사이즈)*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="profile-img-box">
+        <img class="profile-img" src="/images/dog.jpg" alt="ddd">
+    </div>
+    <div class="box"></div>
+</body>
+</html>

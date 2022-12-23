@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1, .box2{
+            /* inline-block그냥 블록은 마진이 옆을 채우고 있어서 다음블록이
+            밑으로감 그렇지만 인라인블락은 블락이면서 마진 다안채움 그래서 다음 블록이 옆으로 갈 수있음 
+            none은 박스 사라짐*/
+            display: inline-block;
+            position: relative; /* relative 해야 left 가 먹는다. (static , top 은 안먹음) */
+            left: 100px;
+            top: 100px;
+            border: 1px solid black; /* 가득메우고있다 옆으로 -> 블록레벨*/
+            
+            width: 300px;
+            height: 100px;
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        웹 개발 시작하기
+    </div>
+    <div class="box2">
+        웹 개발 시작하기
+    </div>
+
+</body>
+</html>

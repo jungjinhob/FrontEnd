@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-container1{
+            position: relative; /* 자식에게 영향을 줌 relative는 중요!! */
+            top: 100px;
+            left: 100px;
+            
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+
+
+        }
+        .box-container2{
+            position: relative; 
+            top: 100px;
+            left: 100px;
+            
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+
+
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+
+        .b1{
+            position: absolute; /* absolute 흐름무시 (static과 반대)*/
+            right: 50px; /* -주면 부모 박스 튀어나감 */
+            top: 50px;
+            background-color: blue;
+        }
+        .b2{
+            background-color: red;
+        }
+        .bb{
+            
+            display: inline-block;
+            border: 1px solid black;
+            
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+        }
+        
+    </style>
+</head>
+<body bgcolor="darkgray">
+    <div class="box-container1">
+        <div class="box-container2">
+            <div class="box b1"></div>
+            <div class="box b2"></div>
+        </div>
+        
+    </div>
+    <div class="bb">
+        
+    </div>
+
+</body>
+</html>
