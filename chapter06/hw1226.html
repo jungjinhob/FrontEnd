@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .top{
+            
+            margin: auto;
+            width: 1150px;
+            height: 50px;
+            background-color: #3b3535;
+        }
+        .oven{
+            float: left;
+            font-size: 23px;
+            position: relative;  left: 13%;
+            line-height: 50px; 
+            color: white;
+        }
+        .beta{
+            font-size: small;
+            color: gray;
+            float: left;
+            position: relative;
+            left: 13%;
+            top: 15%
+            
+        }
+        .img{
+            
+            float: right;
+            
+            position: relative;
+            
+
+            border: 5px solid #dbdbdb99;
+            border-radius: 50%;
+
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+            transform: translate(0%,15%);
+        }
+        .name{
+            position: relative;
+            float: right;
+            line-height: 50px;
+            
+            color: white;
+        }
+        .tri{
+            position: relative;
+            width: 0px;
+            height: 0px;
+            border-top: 5px solid #666666;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            transform: translate(0%,500%);
+            float: right;
+            
+        }
+        form{
+            position: relative;
+            float: right;
+            margin: 15px;
+            
+        }
+        .body{
+            border:  1px solid black;
+            margin: auto;
+            width: 1150px;
+            height: 690px;
+        }
+        .search{
+            float: right;
+            
+        }
+        
+        input{
+            position: relative;
+            width: 200px;
+            height: 35px;
+
+        }
+        
+        table{
+            border-collapse: collapse;
+            border: 5px solid black;
+        }
+        li{
+            list-style: none;
+            font-size: 18px;
+            line-height: 50px;
+            font-weight:200;
+        }
+        .bt{
+            position: relative;
+            border-bottom: 3px solid gray;
+            width: 100%;
+            height: 18%;
+            line-height: 100px;
+            font-size: 30px;
+            
+            
+        }
+        .bb{
+
+        }
+        .col1{
+            float: left;
+            width: 22%;
+            height: 100%; 
+            
+            
+             
+        }.col2{
+            float: left;
+            width: 78%;
+            height: 100%;
+            
+            
+        }
+        .b1, .b2{
+            margin: 25px;
+        }
+        .b2{
+            float: right;
+        }
+        .test{
+            
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .intest{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin:  auto;
+            width: 98%;
+            height: 40%;
+            border: 1px solid black;
+        }
+        .c1{
+            margin: 20px;
+            zoom: 0.5;
+            
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding-left: 10%;
+            border-top: 1px solid gray;
+            
+        }
+        .box1 , .box2, .box3{
+            
+            height: 100%;
+            border: 1px solid black;
+            
+        }
+        .box1,.box3{
+            background-color: gray;
+            width: 30%;
+        }
+        .box2{
+            width:40%;
+
+        }
+    </style>
+<body>
+    <div class="top">
+        <div class="oven">Oven</div>
+        <div class="beta">BETA</div>
+        <form action="">
+            <select name="select" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </form>
+        <div class="tri"></div>
+        <div class = "name">jungjinho</div>
+        <div class="img">
+            <img src="/images/dog.jpg" alt="">
+        </div>
+        
+        
+        
+    </div>
+    <div class="body">
+        <div class="bt">
+            프로젝트 대쉬보드           
+            <div class="search">
+                <input type="text" placeholder="프로젝트 검색">
+                
+            </div>
+            
+        </div>
+        
+        <div class="col1">
+            <ul>
+                <li>
+                    나의 프로젝트
+                </li>
+                <li>
+                    진행중인 프로젝트
+                </li>
+            </ul>
+            
+
+        </div>
+        <div class="col2">
+            <button type="button" class="b1" > 모두 선택 </button>
+            <button type="button" class="b2"> 새 프로젝트 만들기</button>
+
+            <div class="test">
+                <input type="checkbox" class="c1">
+                <div class="intest">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </div>
+                test
+                
+            </div>
+            
+        </div>
+            <footer class="footer">
+                <p></p>oven 서비스 방침</p>  
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+</html>
