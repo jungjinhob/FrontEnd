@@ -1,0 +1,14 @@
+
+*{
+    box-sizing: border-box;
+}
+.google-header{
+    position: relative;
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header-icon{
+    position: relative;
+}

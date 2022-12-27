@@ -81,6 +81,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 9px;
 }
 
 .pull-left{
@@ -166,3 +169,183 @@ header{
     background-color: #e6e6e6;
 
 }
+.row{
+    
+    display: flex;
+    
+}
+
+.nav-stacked{
+    margin: 0;
+    padding: 0px 15px 0px 0px;
+    width: 277px;
+
+    list-style-type: none;
+}
+
+.nav-stacked-list{
+    border-radius: 2px;
+    padding: 10px 15px;
+    width: 262.5px;
+    height: 40px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+/* 액티브 리스트가 없는놈한테만 호버 적용 */
+.nav-stacked-list:not([class *=active-list]):hover{
+    background-color: #eee;
+}
+.active-list{
+    background-color: #3498db;
+    color: #fff;
+}
+.project-main{
+    padding-left: 15px;
+    width: 862.5px;
+}
+.project-action{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    border: 1px solid #adadad;
+    padding: 6px 12px;
+    height: 34px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #afafaf;
+}
+.btn-default{
+    background-color: white;
+}
+.btn-primary{
+    background-color: #3498db;
+    color: white;
+}
+.btn-primary:hover{
+    background-color: #357ebd;
+}
+
+.project-list-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+    height: 651px;
+    overflow: auto;
+    min-height: 350px;
+}
+
+.project-item{
+    padding: 0px 15px;
+    margin: 0;
+}
+.project-container{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 252px;
+
+}
+.item-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+}
+
+.item-option-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    border-radius: 2px;
+    width: 35px;
+    height: 22px;
+    cursor: pointer;
+}
+.item-option-btn:hover{
+    border: 1px solid #ddd;
+    background-color: #e6e6e6;
+}
+.item-option-btn .fa-solid{
+    font-size: 11px;
+    margin: 0px 1px;
+}
+
+.item-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    width: 242.5px;
+    border-radius: 2px;
+    height: 162px;
+    overflow: hidden;
+}
+.item-img-container img{
+    width: 100%;
+    
+}
+.item-content{
+    padding: 9px;
+
+}
+.item-title{
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #3498db;
+}
+.item-description{
+    
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    height: 48px;
+    font-size: 12px;
+}
+
+.project-time{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.project-time .fa-clock{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn-test{
+    padding: 1.8px 5.4px 2.7px;
+    height: auto;
+    line-height: 10px;
+
+    background-color: #5cb85c;
+    color: white;
+    font-size: 10px;
+
+}
+
+.footer-container{
+    border-top:1px solid #eee;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    
+    height: 61px;
+}
+.footer-left1{
+    color: #3498db;
+}
+.footer-left2{
+    color: #3498db;
+}
+
