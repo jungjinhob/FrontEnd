@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 3</title>
+    <script src="js/common.js"></script>
+    <script>
+        //호이스팅
+        function a(){
+            
+            var number = 10;
+            var number = 10;
+            console.log(number);
+        }
+        a();
+
+        // function1
+        function func1(){
+            alert(' func1 - 안녕하세요');
+            
+        }
+        // func1();
+        // function2 람다는 인자안에 인자받을 수 있다.
+        const func2 = () => {
+            alert(' func2 - 안녕하세요');
+        }
+        // func2();
+        const moveExample02 = () =>{
+            location.href
+        }
+    </script>
+</head>
+<body>
+    <!-- onclick -> 클릭시 ""안의 함수실행 -->
+    <button id = "btn1">btn1</button>
+    <input  style="width : 100px;" />
+    <button onclick="helloworld();">Hello world!</button>
+
+    <button onclick="moveExample02();">Move 02</button>
+    <a href="./example02.html">move 02</a>
+    <script>
+        const onClickHandler = document.querySelector('#btn1');
+        onClickHandler.onclick = func2;
+
+        document.querySelector('#btn1').onclick = func2;
+    </script>   
+</body>
+</html> 
