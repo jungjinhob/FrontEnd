@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headline">
+            <h1>주문서 작성</h1>
+        </div>
+        <form  class="inner-form">
+            <div class="order_table_type">
+                <!-- 장바구니 상품리스트 시작 -->
+                <table>
+                    
+                    <thead>
+                    <tr>
+                        <th>상품정보</th>
+                        <th>수량</th>
+                        <th>주문금액</th>
+                        
+                    </tr>
+                    </thead>
+                    
+                </table>
+                <!-- 장바구니 상품리스트 끝 -->
+            </div>
+            <div class="order_view_info">
+                        
+                <!-- 주문자 정보 시작 -->                        
+                <section class="orderer">
+                    <h4>주문자 정보</h4>
+                    <ul class="inputs">
+                      <li>
+                        <div class="label">이름</div>
+                        <input type="text" name="orderName" id="orderName" value="" data-pattern="gdEngKor" maxlength="20">
+                      </li>
+                      <li>
+                        <div class="label">연락처</div>
+                        <input type="text" id="mobileNum" name="orderCellPhone" value="" maxlength="20">
+                      </li>
+                      <li>
+                        <div class="label">이메일</div>
+                        <div class="email">
+                            <input name="orderEmail" type="hidden" value="">
+                            
+                            <input type="text" id="js_order_email1" value=""><span>@</span>
+                            <input type="text" id="js_order_email2" value="">
+                            
+                        </div>
+                      </li>
+                      
+                      
+                      
+                    </ul>
+                </section>
+                <!--// 주문자 정보 끝 -->
+                <section class="delivery">
+                    <h4>배송지 정보</h4>
+                    
+                    <ul class="inputs">
+                        <li>
+                            <div class="label">수령인</div>
+                            <input type="text" name="receiverName" data-pattern="gdEngKor" maxlength="20">
+                        </li>
+                        <li>
+                            <div class="label">연락처</div>
+                            <input type="text" id="receiverCellPhone" name="receiverCellPhone">
+                        </li>
+                        
+                        <li class="address">
+                            <div class="label">
+                              <span>배송지</span>
+                              <ul class="manager">
+                                 <input type="hidden" class="shipping-delivery-visit" value="n">
+                              </ul>
+                            </div>
+                            
+                            <div class="postal_code">
+                                <input type="text" name="receiverZonecode" class="postnum">
+                                
+                                <button type="button" class="btn_post_search" onclick="">우편번호검색</button>
+                            </div>
+                            
+                            <input type="text" name="receiverAddress" placeholder="주소" >
+                            <input type="text" name="receiverAddressSub" placeholder="상세주소 입력">
+                             
+                            <input type="hidden" name="receiverZipcode">
+                            
+                        </li>
+                        
+                        <li>
+                            <div class="Mlabel">배송 메세지</div>
+                            <textarea name="orderMemo"></textarea>
+                        </li>
+                        
+                        <li style="display:none;">
+                            <div class="label">전화번호</div>
+                            <input type="text" id="receiverPhone" name="receiverPhone">                           	
+                        </li>
+                        
+                        
+                        <li class="orderVisitTr dn" style="display:none;">
+                            <div class="label">방문수령 정보</div>
+                            <div class="table1">
+                                <table>
+                                                <colgroup>
+                                                    <col style="width:150px;">
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">방문 수령지 주소</th>
+                                                    <td>
+                                                        <span class="delivery-method-visit-area-txt"></span>
+                                                        <input type="hidden" name="visitAddress" value="">
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><span class="important">방문자 정보</span></th>
+                                                    <td>
+                                                        방문자명 <input type="text" name="visitName" value="" class="text"> 방문자연락처 <input type="text" name="visitPhone" value="" class="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">메모</th>
+                                                    <td class="td_last_say">
+                                                        <input type="text" name="visitMemo" maxlength="250">
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </section>  
+                <div class="payment_info">
+                    <div class="order_zone_tit">
+                        <h4>결제정보</h4>
+                    </div>
+
+                    <div class="order_table_type">
+                        <ul class="table_left nonmem">
+                            <li class="delivery_in">
+                                <div class="row">상품 합계 금액</div>
+                                
+                            </li>
+                            <li class="sign">
+                                
+                                <div><img src="" ></div>
+                                
+                            </li>
+                            
+                            
+                            <li class="delivery_in">
+                                <div class="row">배송비</div>
+                                
+                            </li>
+                            <li class="sign">
+                                <div></div>
+                                
+                            </li class="delivery_in">
+                            <li>
+                                <div class="row">최종 결제 금액</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>      
+            </div>
+            <div class="payment_progress">
+                
+
+                
+                     
+                    
+                        
+                    
+                    
+
+                
+                
+                
+                <div class="payment_final">
+                    
+
+                    
+                    
+                    <!-- 비회원 약관 동의 시작 -->
+                    
+    
+                    <div class="order_agree order_policy">
+                        <div class="order_zone_tit" style="display:none;">
+                            <h4>비회원 주문에 대한 개인정보 수집 이용 동의</h4>
+                        </div>
+                        <div class="order_agree_cont">
+                            <div class="join_agreement_box">
+                            
+                                <div class="payment_agree_check">
+                                    <span class="check_wrap">
+                                    <input type="checkbox" id="termAgree_guest" name="termAgreeGuest" class="require">
+                                    <label for="termAgree_guest" class="check_b single">
+                                        <span class="check_img"></span>
+                                        <em><b>(필수)</b> 비회원 개인정보 수집 이용에 대한 내용을 확인 하였으며 이에 동의 합니다.</em>
+                                    </label>
+                                    </span>
+                                </div>
+                                
+                                <a href="#termsOfPrivate" class="find btn_open_layer active_button">약관보기</a>
+                                
+                               
+                                    
+                            </div>
+                        </div>
+                        <!-- //order_agree_cont -->
+                    </div>
+                    <!-- //order_agree -->
+                    <div class="order_agree">
+                        <div class="order_zone_tit" style="display:none;">
+                            <h4>이용약관 동의</h4>
+                        </div>
+                        <div class="order_agree_cont">
+                            <div class="join_agreement_box">
+                                    
+                                <div class="payment_agree_check">
+                                    <span class="check_wrap">
+                                    <input type="checkbox" id="termAgree_agreement" name="termAgreeAgreement" class="require">
+                                    <label for="termAgree_agreement" class="check_b single">
+                                        <span class="check_img"></span>
+                                        <em><b>(필수)</b> 이용약관에 대한 내용을 확인 하였으며 이에 동의 합니다.</em>
+                                    </label>
+                                    </span>
+                                </div>
+                                
+                                <a href="#termsOfService" class="find btn_open_layer active_button">약관보기</a>
+                                    
+                                    
+                            </div>
+                        </div>
+                        <!-- //order_agree_cont -->
+                    </div>
+                    <!-- //order_agree -->
+    
+                    <!--//비회원 약관 동의 끝 -->
+        
+                    <div class="payment_final_check ">
+                        <span class="check_wrap">
+                        <input type="checkbox" id="termAgree_orderCheck" class="require">
+                        <label class="check_b single" for="termAgree_orderCheck">
+                            <span class="check_img"></span>
+                            <em><!--<b>(필수)</b>--> 주문 내용을 확인하였으며, 정보 제공 등에 동의합니다.</em>
+                            
+                        </label>
+                        </span>
+                    </div>
+                    <div class="btn_center_box">
+                        <button class="order-buy btn_prime"><span>결제하기</span></button>
+                    </div>
+                </div>
+                <!-- //payment_final -->
+                
+
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

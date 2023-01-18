@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard', 'sans-serif';
+    box-sizing: border-box;
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+.container {
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+    max-width: calc(1200px + 10%);
+}
+.headline{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+.order_table_type{
+    margin-top: 10px;
+}
+.order_table_type th:first-child {
+    text-align: left;
+    padding-left: 32px;
+}
+.order_table_type th {
+    height: 60px;
+    padding: 0;
+    border-top: none;
+    border-bottom: 1px solid #000;
+    background: none;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+}
+.order_table_type table {
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+.order_view_info{
+    width: 100%;
+}
+.orderer , .delivery{ 
+    margin-top: 119px;
+}
+.inputs {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputs > li {
+    width: calc(50% - 35px);
+    padding-top: 45px;
+}
+
+#js_order_email1  {
+    width: 64%;
+}
+#js_order_email2{
+    width: 30%;
+}
+li{
+    list-style: none;
+    margin-right: 30px;
+}
+.label{
+    margin-bottom: 20px ;
+}
+.Mlabel{
+    margin-bottom: 30px ;
+}
+.inputs input[type="text"] {
+    margin: 20px 0px;
+    width: 100%;
+    border:none;
+    border-bottom: solid 1px #808080;
+    height: 45px;
+}
+.postal_code {
+    display: flex;
+    align-items: center;
+}
+.postal_code button {
+    margin-left: 20px;
+    width: 150px;
+    height: 28px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    
+}
+.delivery textarea {
+    width: 100%;
+    height: 225px;
+    padding: 20px;
+    font-size: 15px;
+    
+    border: 1px solid #808080;
+    border-radius: 5px;
+    resize: none;
+}
+.delivery_in{
+    text-align: center;
+    
+}
+.row{
+    height: 60px;
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    margin-right: 100px;
+}
+.payment_info{
+    margin-top: 100px;
+    text-align: left;
+}
+.payment_info .table_left {
+    display: flex;
+    justify-content: center;
+    border-top: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.table_left .nonmem{
+    width: 100%;
+    
+}
+
+.payment_progress {
+    margin-top: 120px;
+}
+.order_zone_tit {
+    padding-bottom: 10px;
+    
+}
+.btn_center_box {
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+    
+}
+
+.payment_final .btn_prime {
+    margin-top: 30px;
+    width: 420px;
+    height: 60px;
+    background-color: black;
+}
+.check_b single{
+    margin: 20px 0px;
+}
+.join_agreement_box ,.payment_final_check {
+    display: flex;
+    font-size: 14px;
+}
+.join_agreement_box .btn_open_layer {
+    margin-left: 16px;
+    text-decoration: underline;
+}
+em{
+    display: inline;
+}
+li{
+    text-align: left;
+}
